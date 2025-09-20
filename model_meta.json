@@ -1,0 +1,26 @@
+{
+  "sklearn_version": "1.7.2",
+  "task": "classification",
+  "feature_cols": [
+    "pclass",
+    "sex",
+    "age",
+    "sibsp",
+    "parch",
+    "fare",
+    "embarked"
+  ],
+  "num_cols": [
+    "pclass",
+    "age",
+    "sibsp",
+    "parch",
+    "fare"
+  ],
+  "cat_cols": [
+    "sex",
+    "embarked"
+  ],
+  "target": "survived",
+  "estimator": "SVC(kernel='linear', probability=True)"
+}
