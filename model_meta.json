@@ -7,15 +7,13 @@
     "age",
     "sibsp",
     "parch",
-    "fare",
     "embarked"
   ],
   "num_cols": [
     "pclass",
     "age",
     "sibsp",
-    "parch",
-    "fare"
+    "parch"
   ],
   "cat_cols": [
     "sex",
