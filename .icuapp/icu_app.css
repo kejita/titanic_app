@@ -1,0 +1,57 @@
+:root {
+  --bg: #0f172a;
+  --panel: #111827;
+  --text: #e5e7eb;
+  --muted: #94a3b8;
+  --accent: #22d3ee;
+  --accent-2: #a78bfa;
+  --border: #1f2937;
+}
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, "Noto Sans JP", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  background: linear-gradient(120deg, #0b1020, #0f172a 40%, #1e293b 100%);
+  color: var(--text);
+  line-height: 1.6;
+}
+header {
+  padding: 20px;
+  border-bottom: 1px solid var(--border);
+  background: rgba(17, 24, 39, 0.6);
+  position: sticky;
+  top: 0;
+  backdrop-filter: blur(8px);
+}
+header h1 {
+  margin: 0;
+  font-size: 20px;
+  letter-spacing: 0.2px;
+}
+.container {
+  max-width: 960px;
+  margin: 32px auto;
+  padding: 0 16px;
+}
+.card {
+  background: rgba(17, 24, 39, 0.7);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 20px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.25);
+}
+.row { display: flex; gap: 12px; flex-wrap: wrap; }
+label {
+  display: block; font-weight: 600; font-size: 13px; color: var(--muted); margin-bottom: 6px;
+}
+input, select, button, textarea {
+  width: 100%; padding: 10px 12px; border-radius: 10px; border: 1px solid var(--border); background: #0b1220; color: var(--text);
+}
+button {
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  color: #0b1020; border: none; font-weight: 700; cursor: pointer; transition: transform .06s ease;
+}
+button:active { transform: translateY(1px); }
+footer { text-align:center; color: var(--muted); font-size: 12px; padding: 24px 0 40px;}
+.grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(220px,1fr)); gap: 14px; }
